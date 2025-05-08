@@ -1635,55 +1635,78 @@ section,
 }
 
 .card-price-custom {
-  border-radius: 15px; /* Rounded corners for the whole card */
-  border: 1px solid var(--accent-color); /* Optional: add a subtle border */
-  overflow: hidden; /* Ensures rounded corners apply to the header */
+  border-radius: 15px;
+  /* Rounded corners for the whole card */
+  border: 1px solid var(--accent-color);
+  /* Optional: add a subtle border */
+  overflow: hidden;
+  /* Ensures rounded corners apply to the header */
 }
+
 .card-header-custom {
-  background-color: var(--accent-color); /* Green background, adjust as needed */
+  background-color: var(--accent-color);
+  /* Green background, adjust as needed */
   color: white;
   text-align: center;
   font-size: 1rem;
   padding: 6px;
 }
+
 .card-body-custom {
   padding: 20px;
-  text-align: center; /* Center align price and duration */
+  text-align: center;
+  /* Center align price and duration */
 }
+
 .price {
-  font-size: 3rem; /* Large price text */
+  font-size: 3rem;
+  /* Large price text */
   font-weight: bold;
   margin-bottom: 5px;
-  color: #333; /* Darker text color */
+  color: #333;
+  /* Darker text color */
 }
+
 .duration {
   font-size: 1rem;
-  color: #666; /* Grayish text color */
+  color: #666;
+  /* Grayish text color */
   margin-bottom: 20px;
 }
+
 .features-list {
-  list-style: none; /* Remove default list bullets */
+  list-style: none;
+  /* Remove default list bullets */
   padding: 0;
-  text-align: left; /* Align features text to the left */
+  text-align: left;
+  /* Align features text to the left */
 }
+
 .features-list li {
   margin-bottom: 15px;
-  display: flex; /* Use flexbox for icon and text alignment */
+  display: flex;
+  /* Use flexbox for icon and text alignment */
   align-items: center;
   gap: 4px;
 }
+
 .features-list li i {
-  color: #4CAF50; /* Green color for checkmark icon */
-  margin-right: 10px; /* Space between icon and text */
-  font-size: 1.2rem; /* Size of the icon */
-}
-.features-list li span {
-  flex-grow: 1; /* Allow text to take up remaining space */
-  font-size: 1rem;
-   color: #333;
+  color: #4CAF50;
+  /* Green color for checkmark icon */
+  margin-right: 10px;
+  /* Space between icon and text */
+  font-size: 1.2rem;
+  /* Size of the icon */
 }
 
-.section.footer{
+.features-list li span {
+  flex-grow: 1;
+  /* Allow text to take up remaining space */
+  font-size: 1rem;
+  color: #333;
+}
+
+.section.footer {
 
   background-color: #3C3D42;
 
@@ -1697,12 +1720,14 @@ section,
   max-width: 400px;
   border: 1px solid #ccc;
 }
+
 .profile-img {
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 .btn-whatsapp {
   background-color: #25D366;
   color: white;
@@ -1713,6 +1738,73 @@ section,
   padding: 12px;
   font-size: 1.2rem;
 }
+
 .btn-whatsapp:hover {
   background-color: #1ebe57;
+}
+
+.title-cosas {
+  color: #1A8F2F;
+  font-size: 14px;
+}
+
+.block-cosas {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.title-image {
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  z-index: 9;
+  font-size: 14px;
+  line-height: 16px;
+  height: 100px;
+  display: flex;
+  justify-content: last baseline;
+  align-items: self-end;
+  padding-bottom: 10px;
+  background: linear-gradient(to bottom, transparent, black);
+
+
+}
+
+.subtitle-cosas {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card-cosas {
+  background-color: #F6F6F6;
+}
+
+.faq-header {
+  width: 100%;
+  height: 132px;
+  background-color: #F3FFED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-header * {
+
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 62px;
+  text-align: center;
+
+}
+
+.accordion-header button{
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.accordion-item .accordion-body{
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 13px;
 }
