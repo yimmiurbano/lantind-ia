@@ -30,6 +30,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+
+  <style>
+    .hero .btn-get-started {
+      padding: 12px 28px 12px 28px !important;
+      width: 95% !important;
+    }
+
+    .card-image-container img {
+      max-width: 130%;
+    }
+
+    .card-custom {
+      overflow: hidden;
+    }
+    .btn-get-started {
+
+    width: 90%;
+
+}
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -67,7 +88,7 @@
                 d="M18.7651 22.9395C17.3701 22.2301 16.2905 21.2312 15.5337 19.9355C14.7731 18.6397 14.3947 17.1304 14.3947 15.404C14.3947 13.721 14.762 12.2334 15.5003 10.9377C16.2386 9.64198 17.2737 8.6358 18.613 7.91555C19.9523 7.19529 21.4919 6.83698 23.2393 6.83698C25.9847 6.83698 28.1402 7.58256 29.7058 9.07736C31.2714 10.5722 32.0542 12.6135 32.0542 15.2013C32.0542 15.7117 32.0209 16.2546 31.9504 16.83H18.9877C19.1472 17.8724 19.6629 18.7012 20.5347 19.3202C21.4066 19.9391 22.5122 20.2503 23.8515 20.2503C24.7567 20.2503 25.6323 20.1128 26.4707 19.8341C27.3092 19.559 28.0029 19.1754 28.5446 18.6868L31.0637 21.2095C30.1807 22.0962 29.09 22.7803 27.7989 23.2689C26.5041 23.7539 25.1314 24 23.6808 24C21.7999 24 20.16 23.6489 18.7651 22.9395ZM27.6987 13.9092C27.606 12.8451 27.1756 12.0054 26.4039 11.3865C25.6323 10.7676 24.6231 10.4563 23.3766 10.4563C22.1746 10.4563 21.1914 10.7604 20.4346 11.3684C19.674 11.9765 19.214 12.8234 19.0582 13.9092H27.6987Z"
                 fill="#3C3D42" />
               <path
-                d="M38.5356 22.8889C37.1629 22.1903 36.1018 21.195 35.3524 19.0029C34.603 18.6108 34.2283 17.0979 34.2283 15.3714C34.2283 13.6884 34.6067 12.2009 35.3673 10.9051C36.1278 9.60941 37.1889 8.60323 38.5504 7.88298C39.912 7.16272 41.4887 6.80441 43.2806 6.80441C45.7775 6.80441 47.9292 7.65496 49.7471 9.35968L47.1279 12.114C46.653 11.6507 46.0965 11.2888 45.4621 11.0354C44.8277 10.7821 44.1562 10.6554 43.455 10.6554C42.0489 10.6554 40.91 11.0934 40.0344 11.9656C39.1626 12.8415 38.7248 13.9744 38.7248 15.3678C38.7248 16.7613 39.1626 17.8978 40.0344 18.77C40.9063 19.6459 42.0489 20.0802 43.455 20.0802C44.9984 20.0802 46.2894 19.5482 47.3356 18.4877L49.9883 21.2746C48.1036 23.0445 45.8925 23.9312 43.3511 23.9312C41.5147 23.9349 39.9083 23.5874 38.5356 22.8889Z"
+                d="M38.5356 22.8889C37.1629 22.1903 36.1018 21.195 35.3524 19.9029C34.603 18.6108 34.2283 17.0979 34.2283 15.3714C34.2283 13.6884 34.6067 12.2009 35.3673 10.9051C36.1278 9.60941 37.1889 8.60323 38.5504 7.88298C39.912 7.16272 41.4887 6.80441 43.2806 6.80441C45.7775 6.80441 47.9292 7.65496 49.7471 9.35968L47.1279 12.114C46.653 11.6507 46.0965 11.2888 45.4621 11.0354C44.8277 10.7821 44.1562 10.6554 43.455 10.6554C42.0489 10.6554 40.91 11.0934 40.0344 11.9656C39.1626 12.8415 38.7248 13.9744 38.7248 15.3678C38.7248 16.7613 39.1626 17.8978 40.0344 18.77C40.9063 19.6459 42.0489 20.0802 43.455 20.0802C44.9984 20.0802 46.2894 19.5482 47.3356 18.4877L49.9883 21.2746C48.1036 23.0445 45.8925 23.9312 43.3511 23.9312C41.5147 23.9349 39.9083 23.5874 38.5356 22.8889Z"
                 fill="#3C3D42" />
               <path
                 d="M50.8045 7.16996H55.7388L57.9165 12.4832L60.3651 18.9582L62.7803 12.4832L64.9581 7.16996H69.7885L62.6764 23.5693H57.9499L50.8045 7.16996Z"
@@ -103,76 +124,51 @@
     <section id="hero" class="section hero light-background">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-            <h1 class="text-center" style="font-weight: normal;">No es solo bajar de peso. <b>Es volver a creer en
-                ti.</b></h1>
-            <p class="text-center">Durante años probaste dietas, apps y consejos que no funcionaron. No era tu culpa.
-              Solo estabas usando
-              las herramientas equivocadas</p>
-            <div class="d-flex justify-content-center">
-              <a href="https://wa.me/51912885968?text=Hola Tecvi, quiero empezar!" target="_blank"
-                class="btn-get-started gap-2"><i class="bi bi-whatsapp"></i> ¡Quiero
-                empezar!</a>
+          <div class="col-lg-6 order-1 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <h1 class="text-center" style="font-weight: normal;">No es solo vivir más.<br> Es vivir mejor. <b>Es
+                reconectar contigo.</b></h1>
+            <p class="text-center">Has intentado cuidarte muchas veces, pero todo parecía difícil, lleno de reglas y sin
+              resultados. No necesitas fuerza de voluntad, solo necesitas las herramientas adecuadas.</p>
+            <div class="d-flex justify-content-center d-none d-lg-flex">
+              <a href="https://wa.me/51912885968?text=Hola Tecvi, quiero empezar!" target="_blank" class="btn-get-started gap-2"><i class="bi bi-whatsapp"></i>¡Quiero empezar a vivir
+                saludable!</a>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="images/foto1.png" class="img-fluid animated" alt="">
+          <div class="col-lg-6 order-2 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="images/bienestar_1.png" class="img-fluid animated" alt="">
+            <div class="d-flex justify-content-center d-flex d-lg-none position-relative">
+              <a href="https://wa.me/51912885968?text=Hola Tecvi, quiero empezar!" target="_blank" class="btn-get-started d-flex gap-1 justify-content-center align-items-center"><i
+                  class="bi bi-whatsapp"></i>¡Quiero empezar a vivir
+                saludable!</a>
+            </div>
           </div>
         </div>
       </div>
 
     </section>
 
-    <section id="about" class="section about seccion-2 pb-5 pt-5">
-      <div class="container">
-        <div class="row gy-3">
-          <p class="text-center">Con <b>TECVI.ai</b>, no estás solo. Un coach inteligente y empático te acompaña
-            todos los
-            días por WhatsApp.
-            Sin juzgarte. Sin presionarte. Solo guiándote paso a paso para recuperar tu salud, tu energía y tus ganas.
-          </p>
-          <div class="block-precio text-center">
-            <h2 class="title-head" style="font-size: 1.6rem; font-weight: 600;">¡Directo por WhatsApp. Sin apps. Sin
-              citas. Sin culpa!</h2>
-            <a href="https://wa.me/51912885968?text=Hola Tecvi, quiero empezar!" target="_blank"
-              class="btn-get-started-seccion m-auto w-md-100 gap-2 mt-3"><i class="bi bi-whatsapp"></i> Quiero
-              empezar por $19.00</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="section p-lg-5">
 
-    <section id="about" class="section about pb-2 pt-2">
       <div class="container">
         <div class="row gy-3">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="images/foto2.png" alt="" class="img-fluid">
+          <div class="col-lg-6 align-content-center p-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-center title-head px-3" style="font-weight: 600;">¡Directo por WhatsApp. <br> Sin apps. Sin
+              citas. Sin culpa!
+            </h3>
+            <p class="text-center">Tu coach de bienestar con IA, que te acompaña cada día para ayudarte a sentirte mejor
+              sin hacerte sentir mal.</p>
           </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content ps-0 ps-lg-3">
-              <h3 class="text-center" style="font-size: 30px;"><svg width="36" height="30" viewBox="0 0 36 30"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.205 0C15.5776 1.12359 15.764 2.05993 15.764 2.80899C15.764 3.48315 15.6522 4.38203 15.4286 5.50562C10.4348 5.50562 7.93789 8.08989 7.93789 13.2584C7.93789 15.1311 8.90683 16.1798 10.8447 16.4045C13.677 16.6292 15.0932 18.4644 15.0932 21.9101C15.0932 24.5318 14.4596 26.5543 13.1925 27.9775C12 29.3258 9.80124 30 6.59627 30C2.19876 30 0 27.0037 0 21.0112C0 15.0187 1.19255 10.0375 3.57764 6.06742C5.96273 2.02247 9.83851 0 15.205 0ZM35.441 0C35.8137 1.12359 36 2.05993 36 2.80899C36 3.48315 35.8882 4.38203 35.6646 5.50562C30.6708 5.50562 28.1739 8.08989 28.1739 13.2584C28.1739 15.1311 29.1429 16.1798 31.0807 16.4045C33.913 16.6292 35.3292 18.4644 35.3292 21.9101C35.3292 24.5318 34.6957 26.5543 33.4286 27.9775C32.236 29.3258 30.0373 30 26.8323 30C22.4348 30 20.236 27.0037 20.236 21.0112C20.236 15.0187 21.4286 10.0375 23.8137 6.06742C26.1988 2.02247 30.0745 0 35.441 0Z"
-                    fill="#33D951" />
-                </svg>
-                Tu coach de nutrición con inteligencia artificial, que te acompaña cada día por
-                WhatsApp sin apps, sin
-                culpas, sin complicaciones.<svg width="28" height="23" viewBox="0 0 28 23" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.1739 23C15.8841 22.1386 15.7391 21.4207 15.7391 20.8464C15.7391 20.3296 15.8261 19.6404 16 18.779C19.8841 18.779 21.8261 16.7978 21.8261 12.8352C21.8261 11.3995 21.0725 10.5955 19.5652 10.4232C17.3623 10.2509 16.2609 8.84395 16.2609 6.20225C16.2609 4.19226 16.7536 2.6417 17.7391 1.55056C18.6667 0.516854 20.3768 1.24091e-06 22.8696 1.45883e-06C26.2899 1.75784e-06 28 2.29713 28 6.89139C28 11.4856 27.0725 15.3046 25.2174 18.3483C23.3623 21.4494 20.3478 23 16.1739 23ZM0.434784 23C0.144926 22.1386 -1.76928e-06 21.4207 -1.71908e-06 20.8464C-1.67389e-06 20.3296 0.0869563 19.6404 0.26087 18.779C4.14493 18.779 6.08696 16.7977 6.08696 12.8352C6.08696 11.3995 5.33333 10.5955 3.82609 10.4232C1.62319 10.2509 0.521739 8.84394 0.52174 6.20225C0.52174 4.19226 1.01449 2.6417 2 1.55056C2.92754 0.516853 4.63768 -1.3505e-07 7.13044 8.28732e-08C10.5507 3.81884e-07 12.2609 2.29713 12.2609 6.89139C12.2609 11.4856 11.3333 15.3046 9.47826 18.3483C7.62319 21.4494 4.6087 23 0.434784 23Z"
-                    fill="#33D951" fill-opacity="0.5" />
-                </svg>
-              </h3>
-            </div>
+
+          <div class="col-lg-6 p-lg-5 text-end" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/bienestar_2.png" alt="" class="img-fluid">
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- ¿Qué incluye el programa? -->
-    <section id="que-incluye" class="services section light-background">
+    <section id="que-incluye" class="services py-lg-5 section light-background">
 
       <div class="container text-center mb-3" data-aos="fade-up">
         <h3> <b>¿Qué incluye el programa?</b></h3>
@@ -180,62 +176,55 @@
 
       <div class="container">
 
-        <div class="row">
+        <div class="row justify-content-center">
 
           <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class=""><img class="w-100" src="images/incluye-1.png"></div>
-              <p class="p-2 text-center">Plan de alimentación 100% personalizado</p>
+              <div class=""><img class="w-100" src="images/b_1.png"></div>
+              <p class="p-2 text-center">Recomendaciones diarias de alimentación realista y balanceada</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class=""><img class="w-100" src="images/incluye-2.png"></div>
-              <p class="p-2 text-center">Recomendaciones personalizadas según tus comidas</p>
+              <div class=""><img class="w-100" src="images/b_2.png"></div>
+              <p class="p-2 text-center">Recordatorios de hidratación y descanso</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class=""><img class="w-100" src="images/incluye-3.png"></div>
+              <div class=""><img class="w-100" src="images/b_3.png"></div>
+              <p class="p-2 text-center">Tips de movimiento y respiración conscientes</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class=""><img class="w-100" src="images/b_4.png"></div>
+              <p class="p-2 text-center">Puedes enviar fotos, audios o texto</p>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class=""><img class="w-100" src="images/b_5.png"></div>
               <p class="p-2 text-center">Acompañamiento emocional diario</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class=""><img class="w-100" src="images/incluye-4.png"></div>
-              <p class="p-2 text-center">Seguimiento de progreso</p>
-            </div>
-          </div>
-
-
-          <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class=""><img class="w-100" src="images/incluye-5.png"></div>
-              <p class="p-2 text-center">Puedes enviar fotos, audios o texto</p>
+              <div class=""><img class="w-100" src="images/b_6.png"></div>
+              <p class="p-2 text-center">Todo por WhatsApp, sin app</p>
             </div>
           </div>
 
           <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class=""><img class="w-100" src="images/incluye-6.png"></div>
-              <p class="p-2 text-center">Disponibilidad total 24/7</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class=""><img class="w-100" src="images/incluye-7.png"></div>
-              <p class="p-2 text-center">Todo por WhatsApp</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-6 d-flex p-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class=""><img class="w-100" src="images/incluye-8.png"></div>
-              <p class="p-2 text-center">Panel web gratuito</p>
+              <div class=""><img class="w-100" src="images/b_7.png"></div>
+              <p class="p-2 text-center">Panel web gratuito para ver tu evolución</p>
             </div>
           </div>
 
@@ -255,21 +244,24 @@
 
           <div class="col-lg-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="ps-0 ps-lg-3">
-              <h3 class="text-center title-head mb-4">¿Cómo funciona?</h3>
-              <ul style="list-style: none;">
-                <li class="mb-3"> <b>1. Empiezas por WhatsApp: </b> Respondes algunas preguntas simples.</li>
-                <li class="mb-3"> <b>2. Recibes tu plan: </b> Basado en tus gustos, horarios y lo que tienes a mano.
+            <div class="ps-3 ps-lg-3">
+              <h3 class="text-left title-head mb-4">¿Cómo funciona?</h3>
+              <ul style="list-style: none;" class="p-0">
+                <li class="mb-3"> <b>1. Empiezas por WhatsApp: </b> Respondes preguntas simples sobre tu día a día.</li>
+                <li class="mb-3"> <b>2. Recibes tus recomendaciones diarias: </b> Según tu estilo de vida, horarios y
+                  energía.
                 </li>
-                <li class="mb-3"> <b>3. Interactúas cada día: </b> Mandas fotos, audios o mensajes.</li>
-                <li class="mb-3"> <b>4. El coach IA te corrige: </b> Y te acompaña en tiempo real, sin juzgar.</li>
-                <li> <b>5. Ves tu evolución: </b> En tu panel web gratuito, sin apps ni enredos.</li>
+                <li class="mb-3"> <b>3. Interactúas cada día: </b> Mandas fotos de tus comidas o simplemente cuentas
+                  cómo estás.</li>
+                <li class="mb-3"> <b>4. El coach IA te responde: </b> Te da ideas, guía y motivación en tiempo real.
+                </li>
+                <li> <b>5. Ves tu evolución: </b> Sin reglas rígidas. Solo tú mejorando, poco a poco.</li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-5 " data-aos="fade-up" data-aos-delay="200">
-            <img src="images/foto3.png" alt="" class="img-fluid">
+            <img src="images/bienestar_4.png" alt="" class="img-fluid">
 
           </div>
         </div>
@@ -287,11 +279,10 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
 
             <div class="about-content ps-0 ps-lg-3 d-flex flex-column justify-content-center">
-              <h3 class="text-center title-head" style="font-size: 20px;">Historias reales, como la tuya</h3>
+              <h3 class="text-center title-head">Historias reales, como la tuya</h3>
               <div class="testimonial-slider">
                 <div class="testimonial">
-                  <p>"Gracias al coach de Tecvi.ai, bajé mi colesterol y recuperé mi energía. ¡Ahora disfruto más mi día
-                    a día!"
+                  <p>"Mi digestión, mi ánimo y mi piel mejoraron en semanas. Me siento renovada."
 
                   </p>
                   <div class="user">
@@ -300,8 +291,7 @@
                   </div>
                 </div>
                 <div class="testimonial">
-                  <p>"Con Tecvi.ai aprendí a comer mejor sin dejar mis comidas favoritas. Perdí peso y me siento más
-                    enfocado."
+                  <p>"Por fin entendí cómo comer sin obsesionarme. No es dieta, es estilo de vida."
 
                   </p>
                   <div class="user">
@@ -374,31 +364,31 @@
                   <div class="col-6 col-md-3  mb-3">
                     <div class="card-custom bg-light-gray">
                       <div class="contenido-block">
-                        <h5 class="card-title-custom">Tu energía al despertar</h5>
+                        <h5 class="card-title-custom p-lg-3">Tu paz al dormir, sin culpa</h5>
                         <div class="card-image-container">
-                          <img src="images/couch-1.png" class="img-fluid" alt="Persona sonriendo">
+                          <img src="images/emo_3.png" class="img-fluid" alt="Persona sonriendo">
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="col-6 col-md-3  mb-3">
-                    <div class="card-custom bg-light-green">
+                    <div class="card-custom bg-light-green" style="background-color: #DCF8C8;">
                       <div class="contenido-block">
-                        <h5 class="card-title-custom">Tu seguridad al mirarte al espejo</h5>
+                        <h5 class="card-title-custom p-lg-3">Tu claridad mental durante el día</h5>
                         <div class="card-image-container">
-                          <img src="images/couch-2.png" class="img-fluid" alt="Persona sonriendo">
+                          <img src="images/emo_1.png" class="img-fluid" alt="Persona sonriendo">
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="col-6 col-md-3  mb-3">
-                    <div class="card-custom bg-light-green">
+                    <div class="card-custom bg-light-green" style="background-color: #DCF8C8;">
                       <div class="contenido-block">
-                        <h5 class="card-title-custom">Tu motivación para comer bien sin<br>restricciones extremas</h5>
+                        <h5 class="card-title-custom p-lg-3">Tus ganas de moverte,<br> sin obligación</h5>
                         <div class="card-image-container">
-                          <img src="images/couch-3.png" class="img-fluid" alt="Persona sonriendo">
+                          <img src="images/emo_4.png" class="img-fluid" alt="Persona sonriendo">
                         </div>
                       </div>
                     </div>
@@ -407,10 +397,9 @@
                   <div class="col-6 col-md-3  mb-3">
                     <div class="card-custom bg-light-gray">
                       <div class="contenido-block">
-                        <h5 class="card-title-custom">Tus ganas de cuidarte,<br>porque ahora sí tienes<br>con qué
-                          hacerlo</h5>
+                        <h5 class="card-title-custom p-lg-3">Tu energía al despertar</h5>
                         <div class="card-image-container">
-                          <img src="images/couch-4.png" class="img-fluid" alt="Persona sonriendo">
+                          <img src="images/emo_2.png" class="img-fluid" alt="Persona sonriendo">
                         </div>
                       </div>
                     </div>
@@ -427,48 +416,40 @@
 
 
     <!-- ¿Y si me salgo del plan? -->
-    <section id="me-salgo-del-plan" class="section about  pt-2">
+    <section id="me-salgo-del-plan" class="section about  pt-lg-4 pb-lg-4" style="background-color: #e9ffeb;">
       <div class="container">
-        <div class="row gy-3">
+        <div class="row gy-5">
           <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <div class="about-content ps-0 ps-lg-3">
+            <div class="about-content p-lg-5">
               <h3 class="title-head text-center">¿Y si me salgo del plan?</h3>
-              <p class="text-center" style="font-size: 17px;">TECVI.ai no te juzga. Te ayuda a compensar, entender y
-                avanzar. Comiste de más
-                en una reunión, en un
-                viaje, o por ansiedad:</p>
-              <h5 class="text-center px-3" style="font-style: oblique; font-size: 19px;">
-                <b>Tu coach IA está ahí para ayudarte,<br> no para castigarte.</b>
-              </h5>
+              <p class="text-center" style="font-size: 17px;"><b>TECVI.AI</b> no te juzga. Te entiende. Te acompaña.
+                Comiste de más, no te moviste, te estresaste… Tu coach IA te ayuda a entender por qué y qué hacer
+                después.</p>
             </div>
           </div>
           <div class="col-lg-6">
-            <img src="images/whatsapp_web.png" alt="" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PLAN -->
-    <section id="planes" class="section about pb-2 pt-2">
-      <div class="container">
-        <div class="row gy-3">
-          <div class="col-lg-12 d-flex flex-column justify-content-center">
-            <div class="about-content ps-0 ps-lg-3">
-              <h3 class="text-center" style="font-size: 1.6rem;">Sin aplicaciones. Sin menús imposibles.</h3>
-              <p class=" text-center" style="font-size: 1.2rem;;">Solo tú, tu WhatsApp, y un sistema que sí funciona.
-                Porque está diseñado para tu
-                edad, tu estilo de vida, y tu contexto real.</p>
-
+            <div class="about-content p-lg-5">
+              <h3 class="text-center" style="font-size: 30px;"><svg width="36" height="30" viewBox="0 0 36 30"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.205 0C15.5776 1.12359 15.764 2.05993 15.764 2.80899C15.764 3.48315 15.6522 4.38203 15.4286 5.50562C10.4348 5.50562 7.93789 8.08989 7.93789 13.2584C7.93789 15.1311 8.90683 16.1798 10.8447 16.4045C13.677 16.6292 15.0932 18.4644 15.0932 21.9101C15.0932 24.5318 14.4596 26.5543 13.1925 27.9775C12 29.3258 9.80124 30 6.59627 30C2.19876 30 0 27.0037 0 21.0112C0 15.0187 1.19255 10.0375 3.57764 6.06742C5.96273 2.02247 9.83851 0 15.205 0ZM35.441 0C35.8137 1.12359 36 2.05993 36 2.80899C36 3.48315 35.8882 4.38203 35.6646 5.50562C30.6708 5.50562 28.1739 8.08989 28.1739 13.2584C28.1739 15.1311 29.1429 16.1798 31.0807 16.4045C33.913 16.6292 35.3292 18.4644 35.3292 21.9101C35.3292 24.5318 34.6957 26.5543 33.4286 27.9775C32.236 29.3258 30.0373 30 26.8323 30C22.4348 30 20.236 27.0037 20.236 21.0112C20.236 15.0187 21.4286 10.0375 23.8137 6.06742C26.1988 2.02247 30.0745 0 35.441 0Z"
+                    fill="#33D951" />
+                </svg>
+                Solo tú, tu WhatsApp y un sistema que sí funciona. Porque está hecho para tu edad, tu ritmo y tu
+                realidad.<svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1739 23C15.8841 22.1386 15.7391 21.4207 15.7391 20.8464C15.7391 20.3296 15.8261 19.6404 16 18.779C19.8841 18.779 21.8261 16.7978 21.8261 12.8352C21.8261 11.3995 21.0725 10.5955 19.5652 10.4232C17.3623 10.2509 16.2609 8.84395 16.2609 6.20225C16.2609 4.19226 16.7536 2.6417 17.7391 1.55056C18.6667 0.516854 20.3768 1.24091e-06 22.8696 1.45883e-06C26.2899 1.75784e-06 28 2.29713 28 6.89139C28 11.4856 27.0725 15.3046 25.2174 18.3483C23.3623 21.4494 20.3478 23 16.1739 23ZM0.434784 23C0.144926 22.1386 -1.76928e-06 21.4207 -1.71908e-06 20.8464C-1.67389e-06 20.3296 0.0869563 19.6404 0.26087 18.779C4.14493 18.779 6.08696 16.7977 6.08696 12.8352C6.08696 11.3995 5.33333 10.5955 3.82609 10.4232C1.62319 10.2509 0.521739 8.84394 0.52174 6.20225C0.52174 4.19226 1.01449 2.6417 2 1.55056C2.92754 0.516853 4.63768 -1.3505e-07 7.13044 8.28732e-08C10.5507 3.81884e-07 12.2609 2.29713 12.2609 6.89139C12.2609 11.4856 11.3333 15.3046 9.47826 18.3483C7.62319 21.4494 4.6087 23 0.434784 23Z"
+                    fill="#33D951" fill-opacity="0.5" />
+                </svg>
+              </h3>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
 
-    <div class="container my-4">
+    <div class="container my-4 py-5">
       <div class="row justify-content-center">
         <div class="col-sm-10 col-md-8 col-lg-12">
           <div class="d-lg-flex gap-5 justify-content-center justify-items-center align-items-center align-content-center">
@@ -605,23 +586,23 @@
       </div>
     </div>
 
-    <section class="section footer">
+    <section class="section footer p-0">
       <div class="container">
         <div class="row gy-3">
-          <div class="col-lg-4">
-            <img src="images/footer_1.png" class="m-auto w-100 mb-4" alt="">
+          <div class="col-lg-4 d-lg-block d-none">
+            <img src="images/b_footer.png" class="m-auto w-100 m-0" alt="">
           </div>
           <div class="col-lg-8 d-flex flex-column justify-content-center">
             <div class="text-center">
               <h2 style="color: #ffffff; font-size: 32px;" class="text-center">Empieza ahora tu transformación</h2>
               <p style="color: #ffffff; font-size: 14px;" class="text-center px-3">Tu salud no puede esperar más. Haz
                 clic y comienza hoy por WhatsApp.</p>
-              <a href="https://wa.me/51912885968?text=Hola Tecvi, quiero empezar!" target="_blank"
+                <a href="https://wa.me/51912885968?text=Hola Tecvi, quiero empezar!" target="_blank"
                 class="btn-get-started m-auto gap-2"><i class="bi bi-whatsapp"></i> Quiero
                 empezar por $19.00</a>
             </div>
           </div>
-          <div class="col-lg-6 d-xl-none d-block"><img src="images/footer_2.png" class="m-auto w-100 mt-4" alt=""></div>
+          <div class="col-lg-6 d-xl-none d-block"><img src="images/b_footer.png" class="m-auto w-100 mt-4" alt=""></div>
         </div>
 
       </div>
@@ -662,7 +643,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/main.js?v=2"></script>
 
   <script>
     $(document).ready(function () {

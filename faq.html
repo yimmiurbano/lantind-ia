@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>NutryCoach.ai | Un coach inteligente y empático te acompaña todos los días por WhatsApp.</title>
+  <title>TECVI.ai | Un coach inteligente y empático te acompaña todos los días por WhatsApp.</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -30,6 +30,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+  <style>
+
+.accordion-button:not(.collapsed) {
+    color: var(--accent-color);
+    background-color: var(--background-color);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    border: 0px;
+    font-size: 1rem !important;
+}
+
+.accordion-item .accordion-body {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.9rem !important;
+}
+
+.accordion-item{
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border: 0px;
+    font-size: 1rem !important;
+}
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -38,70 +62,44 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center" style="
     flex-direction: row-reverse;
 ">
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#hero" class="active">Inicio</a></li>
-          <li><a href="las-clasicas.html">Las clásicas</a></li>
-          <li><a href="couchs.html">Couchs</a></li>
-          <li><a href="faq.html">Preguntas Frecuentes</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-      <a href="index.html" class="logo d-flex align-items-center me-auto w-100 justify-content-center">
+           <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html#hero" class="active">Inicio</a></li>
+              <li><a href="las-clasicas.html">Las clásicas</a></li>
+              <li><a href="coachs.html">Coachs</a></li>
+              <li><a href="faq.html">Preguntas Frecuentes</a></li>
+              <li> <a href="login.html" class="btn btn-primary"
+                  style="width: 140px; height: 30px; background-color: var(--accent-color); color: #ffffff; border: 0px;">Iniciar
+                  sesión</a> </li>
+              <li> <a href="register.html" class="btn btn-primary"
+                  style="width: 160px; height: 30px; background-color: #ffffff; margin-left: 10px; border: 1px solid #535353; color: #535353;">Quiero
+                  empezar</a> </li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+      <a href="index.html" class="logo d-flex align-items-center me-auto w-100 justify-content-center justify-content-md-start">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename"><svg width="151" height="24" viewBox="0 0 151 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_99_43)">
-              <path
-                d="M92.503 18.0709C91.609 17.4913 90.9113 16.6748 90.4119 15.6193C89.9105 14.5658 89.6617 13.3686 89.6617 12.0296C89.6617 10.6906 89.9124 9.49339 90.4119 8.43998C90.9113 7.38657 91.609 6.57007 92.503 5.98837C93.397 5.40878 94.4173 5.11899 95.5658 5.11899C96.419 5.11899 97.21 5.27975 97.9407 5.60127C98.6714 5.9228 99.2817 6.38604 99.7733 6.99313L99.9949 5.41301H102.825V18.6441H99.9949L99.7733 17.0365C99.2642 17.6626 98.65 18.1343 97.9271 18.4558C97.2041 18.7774 96.4171 18.9381 95.5639 18.9381C94.4192 18.9424 93.397 18.6505 92.503 18.0709ZM93.844 14.7626C94.4678 15.4775 95.2627 15.835 96.2305 15.835C97.2139 15.835 98.0184 15.4775 98.6423 14.7626C99.2661 14.0497 99.5771 13.138 99.5771 12.0296C99.5771 10.9233 99.2642 10.0116 98.6423 9.29667C98.0184 8.58171 97.2158 8.22422 96.2305 8.22422C95.2627 8.22422 94.4659 8.58171 93.844 9.29667C93.2201 10.0116 92.9092 10.9212 92.9092 12.0296C92.9092 13.138 93.2221 14.0497 93.844 14.7626Z"
-                fill="#3C3D42" />
-              <path
-                d="M135.905 18.0709C135.011 17.4913 134.314 16.6748 133.814 15.6193C133.313 14.5658 133.064 13.3686 133.064 12.0296C133.064 10.6906 133.315 9.49339 133.814 8.43998C134.314 7.38657 135.011 6.57007 135.905 5.98837C136.799 5.40878 137.82 5.11899 138.968 5.11899C139.821 5.11899 140.612 5.27975 141.343 5.60127C142.074 5.9228 142.684 6.38604 143.176 6.99313L143.397 5.41301H146.227V18.6441H143.397L143.176 17.0365C142.667 17.6626 142.052 18.1343 141.33 18.4558C140.607 18.7774 139.819 18.9381 138.966 18.9381C137.82 18.9424 136.799 18.6505 135.905 18.0709ZM137.246 14.7626C137.87 15.4775 138.665 15.835 139.633 15.835C140.616 15.835 141.421 15.4775 142.045 14.7626C142.669 14.0497 142.98 13.138 142.98 12.0296C142.98 10.9233 142.667 10.0116 142.045 9.29667C141.421 8.58171 140.618 8.22422 139.633 8.22422C138.665 8.22422 137.868 8.58171 137.246 9.29667C136.623 10.0116 136.312 10.9212 136.312 12.0296C136.312 13.138 136.623 14.0497 137.246 14.7626Z"
-                fill="#3C3D42" />
-              <path
-                d="M12.5992 3.42887C12.5992 2.4918 13.3124 1.71549 14.1734 1.71549C15.0343 1.71549 15.7475 2.4918 15.7475 3.42887V17.1423C15.7475 18.0793 15.0343 18.8556 14.1734 18.8556C13.7789 18.8556 13.361 18.6949 13.0656 18.3458L3.15029 7.55367V17.1423C3.15029 18.0793 2.43705 18.8556 1.57612 18.8556C0.715179 18.8556 0 18.0793 0 17.1423V3.42887C0 2.4918 0.713236 1.71549 1.57417 1.71549C1.99201 1.71549 2.38652 1.90375 2.68192 2.22528L12.5992 13.0196V3.42887Z"
-                fill="#3C3D42" />
-              <path
-                d="M29.9248 12C29.9248 13.2311 29.6042 14.3839 29.0872 15.4014C28.9065 15.7758 28.6286 16.2602 28.201 16.7488C27.6666 17.3601 27.1146 17.7303 26.724 17.9461C25.3558 18.8303 24.217 18.8577 23.6242 18.8577C20.1552 18.8577 17.3237 15.7779 17.3237 12V6.85775C17.3237 5.92068 18.0369 5.14437 18.8978 5.14437C19.7588 5.14437 20.472 5.92068 20.472 6.85775V12C20.472 13.9016 21.8752 15.4289 23.6223 15.4289C25.3694 15.4289 26.7726 13.9016 26.7726 12V6.85775C26.7726 5.92068 27.4858 5.14437 28.3468 5.14437C29.2077 5.14437 29.9209 5.92068 29.9209 6.85775V12H29.9248Z"
-                fill="#3C3D42" />
-              <path
-                d="M33.8622 5.14225V3.42887C33.8622 2.4918 34.5754 1.71549 35.4363 1.71549C36.2973 1.71549 37.0105 2.4918 37.0105 3.42887V5.14225H39.3737C40.2347 5.14225 40.9479 5.91856 40.9479 6.85563C40.9479 7.7927 40.2347 8.56901 39.3737 8.56901H37.0105V13.7113C37.0105 14.6483 37.7238 15.4246 38.5847 15.4246H39.3718C40.2327 15.4246 40.9459 16.201 40.9459 17.138C40.9459 18.0751 40.2327 18.8514 39.3718 18.8514H38.5847C35.9766 18.8514 33.8602 16.5479 33.8602 13.7091V8.57113H32.6786C31.8177 8.57113 31.1045 7.79482 31.1045 6.85775C31.1045 5.92067 31.8177 5.14437 32.6786 5.14437H33.8622V5.14225Z"
-                fill="#3C3D42" />
-              <path
-                d="M45.305 6.05394C46.2398 5.49127 47.299 5.14225 48.4301 5.14225C49.291 5.14225 50.0042 5.91856 50.0042 6.85563C50.0042 7.7927 49.291 8.56901 48.4301 8.56901C46.6829 8.56901 45.2798 10.0962 45.2798 11.9979V17.1401C45.2798 18.0772 44.5665 18.8535 43.7056 18.8535C42.8447 18.8535 42.1314 18.0772 42.1314 17.1401V12C42.1314 10.7668 42.4268 9.61607 42.9691 8.62401C43.1498 8.24326 43.4335 7.74828 43.865 7.25119C44.3839 6.65045 44.9203 6.27604 45.305 6.05394Z"
-                fill="#3C3D42" />
-              <path
-                d="M60.1431 17.9989C59.2316 18.5341 58.1997 18.8556 57.0919 18.8556C53.6229 18.8556 50.7913 15.7758 50.7913 11.9979V6.85775C50.7913 5.92068 51.5046 5.14437 52.3655 5.14437C53.2264 5.14437 53.9397 5.92068 53.9397 6.85775V12C53.9397 13.9016 55.3428 15.4289 57.09 15.4289C58.8371 15.4289 60.2403 13.9016 60.2403 12V6.85775C60.2403 5.92068 60.9535 5.14437 61.8144 5.14437C62.6754 5.14437 63.3886 5.92068 63.3886 6.85775V17.1444C63.3886 20.9202 60.559 24.0021 57.088 24.0021C55.4886 24.0021 53.8639 23.3316 52.6337 21.9926C52.3383 21.6711 52.1653 21.2417 52.1653 20.7869C52.1653 19.8752 52.9038 19.0735 53.7395 19.0735C54.1573 19.0735 54.5519 19.2618 54.8473 19.5833C55.4866 20.2538 56.2737 20.5754 57.0861 20.5754C58.5689 20.5711 59.7991 19.4733 60.1431 17.9989Z"
-                fill="#3C3D42" />
-              <path
-                d="M71.069 18.8577C67.6 18.8577 64.7684 15.7779 64.7684 12C64.7684 8.2221 67.5981 5.14225 71.069 5.14225C72.6684 5.14225 74.2931 5.8128 75.5233 7.15177C75.8187 7.47329 75.9917 7.92808 75.9917 8.35748C75.9917 9.29455 75.2532 10.0709 74.4175 10.0709C73.9997 10.0709 73.6052 9.9101 73.3098 9.56108C72.6937 8.86515 71.8833 8.57112 71.071 8.57112C69.3238 8.57112 67.9207 10.0984 67.9207 12C67.9207 13.9016 69.3238 15.4289 71.071 15.4289C71.8833 15.4289 72.6704 15.1073 73.3098 14.4368C73.6052 14.1153 73.9997 13.927 74.4175 13.927C75.2551 13.927 75.9917 14.7308 75.9917 15.6404C75.9917 16.0952 75.8187 16.5246 75.5233 16.8461C74.2931 18.1872 72.6684 18.8577 71.069 18.8577Z"
-                fill="#3C3D42" />
-              <path
-                d="M82.6848 5.14225C86.1538 5.14225 88.9854 8.2221 88.9854 12C88.9854 15.7758 86.1558 18.8577 82.6848 18.8577C79.2158 18.8577 76.3842 15.7779 76.3842 12C76.3842 8.2221 79.2158 5.14225 82.6848 5.14225ZM82.6848 15.4289C84.432 15.4289 85.8351 13.9016 85.8351 12C85.8351 10.0984 84.432 8.57112 82.6848 8.57112C80.9377 8.57112 79.5345 10.0984 79.5345 12C79.5345 13.9016 80.9377 15.4289 82.6848 15.4289Z"
-                fill="#3C3D42" />
-              <path
-                d="M109.854 18.8577C106.385 18.8577 103.553 15.7779 103.553 12C103.553 8.2221 106.383 5.14225 109.854 5.14225C111.453 5.14225 113.078 5.8128 114.308 7.15177C114.604 7.47329 114.777 7.92808 114.777 8.35748C114.777 9.29455 114.038 10.0709 113.202 10.0709C112.785 10.0709 112.39 9.9101 112.095 9.56108C111.479 8.86515 110.666 8.57112 109.856 8.57112C108.109 8.57112 106.706 10.0984 106.706 12C106.706 13.9016 108.109 15.4289 109.856 15.4289C110.668 15.4289 111.455 15.1073 112.095 14.4368C112.39 14.1153 112.783 13.927 113.202 13.927C114.04 13.927 114.777 14.7308 114.777 15.6404C114.777 16.0952 114.604 16.5246 114.308 16.8461C113.076 18.1872 111.453 18.8577 109.854 18.8577Z"
-                fill="#3C3D42" />
-              <path
-                d="M128.754 17.1423C128.754 18.0793 128.04 18.8556 127.179 18.8556C126.319 18.8556 125.605 18.0793 125.605 17.1423V12C125.605 10.0984 124.202 8.57113 122.455 8.57113C120.708 8.57113 119.305 10.0984 119.305 12V17.1423C119.305 18.0793 118.591 18.8556 117.731 18.8556C116.87 18.8556 116.156 18.0793 116.156 17.1423V1.71338C116.156 0.776309 116.87 0 117.731 0C118.591 0 119.305 0.776309 119.305 1.71338V6.07932C120.214 5.48916 121.299 5.14225 122.455 5.14225C125.924 5.14225 128.756 8.22211 128.756 12V17.1423H128.754Z"
-                fill="#3C3D42" />
-              <path
-                d="M131.509 14.9995C132.495 14.9995 133.282 15.8562 133.282 16.9286C133.282 17.9989 132.495 18.8577 131.509 18.8577C130.526 18.8577 129.737 18.0011 129.737 16.9286C129.737 15.8562 130.524 14.9995 131.509 14.9995Z"
-                fill="#3C3D42" />
-              <path
-                d="M149.228 0.429405C150.211 0.429405 151 1.28609 151 2.35854C151 3.43099 150.213 4.28768 149.228 4.28768C148.242 4.28768 147.455 3.43099 147.455 2.35854C147.455 1.28609 148.242 0.429405 149.228 0.429405Z"
-                fill="#3C3D42" />
-              <path
-                d="M150.802 17.1423C150.802 18.0793 150.089 18.8556 149.228 18.8556C148.367 18.8556 147.653 18.0793 147.653 17.1423V6.85775C147.653 5.92068 148.367 5.14437 149.228 5.14437C150.089 5.14437 150.802 5.92068 150.802 6.85775V17.1423Z"
-                fill="#3C3D42" />
+        <h1 class="sitename">
+          
+          <svg width="116" height="24" viewBox="0 0 116 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_216_15)">
+            <path d="M4.54473 22.3423C3.53561 21.347 3.03105 19.8196 3.03105 17.7602V10.7893H0V7.16996H3.02734V2.98598L7.52013 2.5227V7.16996H12.0463V10.7893H7.52013V17.7602C7.52013 18.4913 7.70563 19.0487 8.08034 19.436C8.45505 19.8233 8.98186 20.0151 9.66079 20.0151C10.3175 20.0151 10.989 19.8594 11.6679 19.5518L12.8588 22.9721C12.1799 23.2834 11.5158 23.5042 10.8665 23.6344C10.221 23.7684 9.51239 23.8335 8.74072 23.8335C6.95251 23.8371 5.55013 23.3377 4.54473 22.3423Z" fill="#3C3D42"/>
+            <path d="M18.7651 22.9395C17.3701 22.2301 16.2905 21.2312 15.5337 19.9355C14.7731 18.6397 14.3947 17.1304 14.3947 15.404C14.3947 13.721 14.762 12.2334 15.5003 10.9377C16.2386 9.64198 17.2737 8.6358 18.613 7.91555C19.9523 7.19529 21.4919 6.83698 23.2393 6.83698C25.9847 6.83698 28.1402 7.58256 29.7058 9.07736C31.2714 10.5722 32.0542 12.6135 32.0542 15.2013C32.0542 15.7117 32.0209 16.2546 31.9504 16.83H18.9877C19.1472 17.8724 19.6629 18.7012 20.5347 19.3202C21.4066 19.9391 22.5122 20.2503 23.8515 20.2503C24.7567 20.2503 25.6323 20.1128 26.4707 19.8341C27.3092 19.559 28.0029 19.1754 28.5446 18.6868L31.0637 21.2095C30.1807 22.0962 29.09 22.7803 27.7989 23.2689C26.5041 23.7539 25.1314 24 23.6808 24C21.7999 24 20.16 23.6489 18.7651 22.9395ZM27.6987 13.9092C27.606 12.8451 27.1756 12.0054 26.4039 11.3865C25.6323 10.7676 24.6231 10.4563 23.3766 10.4563C22.1746 10.4563 21.1914 10.7604 20.4346 11.3684C19.674 11.9765 19.214 12.8234 19.0582 13.9092H27.6987Z" fill="#3C3D42"/>
+            <path d="M38.5356 22.8889C37.1629 22.1903 36.1018 21.195 35.3524 19.9029C34.603 18.6108 34.2283 17.0979 34.2283 15.3714C34.2283 13.6884 34.6067 12.2009 35.3673 10.9051C36.1278 9.60941 37.1889 8.60323 38.5504 7.88298C39.912 7.16272 41.4887 6.80441 43.2806 6.80441C45.7775 6.80441 47.9292 7.65496 49.7471 9.35968L47.1279 12.114C46.653 11.6507 46.0965 11.2888 45.4621 11.0354C44.8277 10.7821 44.1562 10.6554 43.455 10.6554C42.0489 10.6554 40.91 11.0934 40.0344 11.9656C39.1626 12.8415 38.7248 13.9744 38.7248 15.3678C38.7248 16.7613 39.1626 17.8978 40.0344 18.77C40.9063 19.6459 42.0489 20.0802 43.455 20.0802C44.9984 20.0802 46.2894 19.5482 47.3356 18.4877L49.9883 21.2746C48.1036 23.0445 45.8925 23.9312 43.3511 23.9312C41.5147 23.9349 39.9083 23.5874 38.5356 22.8889Z" fill="#3C3D42"/>
+            <path d="M50.8045 7.16996H55.7388L57.9165 12.4832L60.3651 18.9582L62.7803 12.4832L64.9581 7.16996H69.7885L62.6764 23.5693H57.9499L50.8045 7.16996Z" fill="#3C3D42"/>
+            <path d="M72.5821 0.731112C73.1052 0.246117 73.7619 0 74.5558 0C75.3497 0 76.0138 0.242497 76.548 0.731112C77.0823 1.21973 77.3494 1.83864 77.3494 2.59146C77.3494 3.32258 77.0823 3.92339 76.548 4.40115C76.0138 4.8789 75.3497 5.11416 74.5558 5.11416C73.7619 5.11416 73.1052 4.87528 72.5821 4.40115C72.059 3.92701 71.7993 3.32258 71.7993 2.59146C71.7993 1.83864 72.059 1.21611 72.5821 0.731112ZM72.2741 7.16996H76.8003V23.5693H72.2741V7.16996Z" fill="#3C3D42"/>
+            <path d="M81.4267 23.1712C80.9258 22.7079 80.6773 22.1071 80.6773 21.3796C80.6773 20.6521 80.9258 20.0477 81.4267 19.5699C81.9238 19.0958 82.5619 18.8569 83.3336 18.8569C84.1053 18.8569 84.7471 19.0958 85.2554 19.5699C85.7674 20.0477 86.0196 20.6485 86.0196 21.3796C86.0196 22.1107 85.7711 22.7079 85.2702 23.1712C84.7694 23.6344 84.1238 23.8697 83.3299 23.8697C82.5619 23.8697 81.9275 23.6381 81.4267 23.1712Z" fill="#33D951"/>
+            <path d="M92.3006 22.8563C91.0652 22.136 90.1006 21.1262 89.4069 19.8196C88.7131 18.513 88.3681 17.0291 88.3681 15.3714C88.3681 13.7138 88.7131 12.2298 89.4069 10.9232C90.0969 9.61665 91.0615 8.60685 92.3006 7.88659C93.5361 7.16634 94.9496 6.80802 96.5374 6.80802C97.7172 6.80802 98.8117 7.00709 99.8208 7.40522C100.83 7.80335 101.676 8.37883 102.355 9.13165L102.663 7.17358H106.577V23.5729H102.663L102.355 21.5823C101.65 22.3568 100.8 22.9431 99.8022 23.3413C98.8042 23.7394 97.7135 23.9385 96.5374 23.9385C94.9496 23.9348 93.5361 23.5765 92.3006 22.8563ZM94.1556 18.7555C95.0163 19.6423 96.1182 20.0838 97.4575 20.0838C98.8191 20.0838 99.9284 19.6423 100.793 18.7555C101.653 17.8724 102.088 16.7432 102.088 15.3678C102.088 13.9961 101.657 12.8668 100.793 11.9801C99.9321 11.0933 98.8191 10.6518 97.4575 10.6518C96.1182 10.6518 95.0201 11.0933 94.1556 11.9801C93.2949 12.8668 92.8608 13.9925 92.8608 15.3678C92.8608 16.7432 93.2912 17.8724 94.1556 18.7555Z" fill="#33D951"/>
+            <path d="M111.236 0.731112C111.759 0.246117 112.416 0 113.21 0C114.004 0 114.668 0.242497 115.202 0.731112C115.737 1.21973 116.004 1.83864 116.004 2.59146C116.004 3.32258 115.737 3.92339 115.202 4.40115C114.668 4.8789 114.004 5.11416 113.21 5.11416C112.416 5.11416 111.759 4.87528 111.236 4.40115C110.713 3.92701 110.454 3.32258 110.454 2.59146C110.454 1.83864 110.713 1.21611 111.236 0.731112ZM110.932 7.16996H115.458V23.5693H110.932V7.16996Z" fill="#33D951"/>
             </g>
             <defs>
-              <clipPath id="clip0_99_43">
-                <rect width="151" height="24" fill="white" />
-              </clipPath>
+            <clipPath id="clip0_216_15">
+            <rect width="116" height="24" fill="white"/>
+            </clipPath>
             </defs>
-          </svg>
+            </svg>
+            
         </h1>
       </a>
 
@@ -111,59 +109,364 @@
   <main class="main">
 
     <div class="faq-header">
-      <h1 class="faq-title">FAQ</h1>
+      <svg width="40px" style="margin-right: 10px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#33d951;}
+	.st1{fill:#fdfffd;}
+	.st2{fill:#29c946;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st0" d="M146.3,438.9h280.4l73.1,73.1V256c0-26.8-21.9-48.8-48.8-48.8H146.3c-26.8,0-48.8,21.9-48.8,48.8v134.1
+		C97.5,416.9,119.5,438.9,146.3,438.9z"/>
+	<path class="st1" d="M314.5,351.1h-43.9l-8.5,25.6h-26.8l45.1-121.9h23.2l45.1,121.9h-26.8L314.5,351.1z M276.7,331.6h30.5
+		l-14.6-46.3L276.7,331.6z"/>
+	<path class="st2" d="M365.7,256H85.3l-73.1,73.1V48.8C12.2,21.9,34.1,0,61,0h304.8c26.8,0,48.8,21.9,48.8,48.8v158.5
+		C414.5,234.1,392.5,256,365.7,256z"/>
+	<path class="st3" d="M273.1,124.3c0,12.2-2.4,21.9-6.1,30.5c-3.7,8.5-8.5,15.8-15.8,20.7l20.7,15.9L256,206l-26.8-20.7
+		c-2.4,0-6.1,1.2-9.8,1.2c-7.3,0-14.6-1.2-21.9-3.7c-6.1-2.4-12.2-7.3-17.1-12.2c-4.9-4.9-8.5-12.2-11-19.5
+		c-2.4-7.3-3.7-15.8-3.7-25.6v-4.9c0-9.8,1.2-18.3,3.7-25.6c2.4-7.3,6.1-14.6,11-19.5c4.9-4.9,9.8-9.8,17.1-12.2
+		c6.1-2.4,13.4-3.7,21.9-3.7c7.3,0,14.6,1.2,21.9,3.7c6.1,2.4,12.2,7.3,17.1,12.2c4.9,4.9,8.5,12.2,11,19.5
+		c2.4,7.3,3.7,15.9,3.7,25.6V124.3z M246.3,118.3c0-13.4-2.4-23.2-7.3-29.3c-4.9-7.3-11-9.8-19.5-9.8c-8.5,0-15.8,3.7-19.5,9.8
+		c-4.9,7.3-7.3,17.1-7.3,29.3v6.1c0,6.1,1.2,12.2,2.4,17.1c1.2,4.9,2.4,9.8,4.9,12.2c2.4,3.7,4.9,6.1,8.5,7.3
+		c3.7,1.2,7.3,2.4,11,2.4c8.5,0,15.8-3.7,19.5-9.8c4.9-7.3,7.3-17.1,7.3-30.5V118.3z"/>
+</g>
+</svg>
+      <h1 class="faq-title" style="color: #33d951;">Preguntas Frecuentes</h1>
     </div>
-  
+
     <div class="container my-3">
       <p class="faq-subtitle"> <b>Resuelve tus dudas rápidamente.</b></p>
-  
+
       <div class="accordion mt-2" id="faqAccordion">
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              1. Lorem ipsum dolor sit amet
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              1. ¿Qué es TECVI.ai y cómo me ayuda?
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
+              TECVI es un coach nutricional personalizado que te acompaña día a día por WhatsApp. Te ayuda a bajar de
+              peso, mejorar tu alimentación y construir hábitos sostenibles, sin dietas complicadas ni plataformas
+              difíciles de usar. Solo necesitas tu celular y ganas de sentirte mejor.
             </div>
           </div>
         </div>
-  
+
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              2. Lorem ipsum dolor sit amet, conse
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              2. ¿En qué se diferencia TECVI de otras apps o programas?
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              Contenido del ítem 2.
+              TECVI no solo te entrega un plan. Te acompaña de manera constante, te responde cuando subes tus comidas,
+              te recuerda cómo equilibrar tus elecciones y te da retroalimentación diaria. Además, utiliza inteligencia
+              artificial entrenada por nutricionistas, con un lenguaje claro y fácil de seguir.
             </div>
           </div>
         </div>
-  
+
 
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              3. Lorem ipsum dolor sit amet, conse
+          <h2 class="accordion-header" id="headingThree3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+              3. ¿Esto es para mí aunque nunca haya hecho dieta o no tenga experiencia con tecnología?
+
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              Contenido del ítem 3.
+              Sí. TECVI está diseñado para personas con poco tiempo y sin experiencia previa. Solo necesitas saber usar
+              WhatsApp. Todo es simple, directo y adaptado a tu ritmo.
             </div>
           </div>
         </div>
-  
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+              4. ¿Cuánto tiempo me toma al día?
+
+            </button>
+          </h2>
+          <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree4"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Menos de 5 minutos. Subes tus comidas, tu peso cuando lo desees, y recibes recomendaciones personalizadas
+              para mantenerte en camino.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+              5. ¿Qué resultados puedo esperar?
+
+            </button>
+          </h2>
+          <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree5"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              La mayoría de los usuarios que siguen las recomendaciones pierde entre 2 y 4 kilos al mes. Más allá del
+              peso, notarás mejoras en tus hábitos, tu energía y tu relación con la comida.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+              6. ¿Qué pasa si no entiendo algo? ¿Hay soporte?
+
+            </button>
+          </h2>
+          <div id="collapseThree6" class="accordion-collapse collapse" aria-labelledby="headingThree6"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sí. Si en algún momento el coach automático no resuelve tu duda, el equipo de TECVI está disponible para
+              ayudarte.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree7" aria-expanded="false" aria-controls="collapseThree7">
+              7. ¿Y si no me gusta o no veo resultados?
+
+            </button>
+          </h2>
+          <div id="collapseThree7" class="accordion-collapse collapse" aria-labelledby="headingThree7"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Puedes dejar de renovar tu suscripción en cualquier momento. TECVI no tiene contratos de permanencia ni
+              cobros ocultos.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree8" aria-expanded="false" aria-controls="collapseThree8">
+              8. ¿Puedo cancelarlo en cualquier momento?
+
+
+            </button>
+          </h2>
+          <div id="collapseThree8" class="accordion-collapse collapse" aria-labelledby="headingThree8"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              TECVI funciona con una suscripción trimestral de S/199 soles o su equivalente en dólares. Si no deseas
+              continuar al finalizar tu período, simplemente no renuevas.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree9">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree9" aria-expanded="false" aria-controls="collapseThree9">
+              9. ¿Se necesita ir a consulta o tener exámenes médicos?
+
+
+            </button>
+          </h2>
+          <div id="collapseThree9" class="accordion-collapse collapse" aria-labelledby="headingThree9"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No es necesario. Si tienes una condición médica, TECVI puede ayudarte a seguir los lineamientos de tu
+              médico, pero no ofrece planes alimenticios terapéuticos. Es una herramienta de acompañamiento, no un
+              reemplazo para la atención clínica.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree10">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree10" aria-expanded="false" aria-controls="collapseThree10">
+              10. ¿Mis datos están seguros?
+            </button>
+          </h2>
+          <div id="collapseThree10" class="accordion-collapse collapse" aria-labelledby="headingThree10"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sí. TECVI cumple con protocolos de seguridad y privacidad. Tu información se maneja de forma confidencial
+              y no se comparte con terceros.
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree11">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree11" aria-expanded="false" aria-controls="collapseThree11">
+              11. ¿Qué incluye mi suscripción a TECVI.ai?
+            </button>
+          </h2>
+          <div id="collapseThree11" class="accordion-collapse collapse" aria-labelledby="headingThree11"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li> Acceso 24/7 a tu coach en WhatsApp</li>
+                <li> Recomendaciones personalizadas para tus comidas</li>
+                <li> Seguimiento de peso y progreso</li>
+                <li> Retroalimentación diaria</li>
+                <li>Retos y objetivos semanales</li>
+                <li> Reportes de avance y motivación constante</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree12">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree12" aria-expanded="false" aria-controls="collapseThree12">
+              12. ¿Puedo usarlo desde cualquier parte del mundo?
+
+            </button>
+          </h2>
+          <div id="collapseThree12" class="accordion-collapse collapse" aria-labelledby="headingThree12"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sí. TECVI funciona vía WhatsApp y está disponible internacionalmente.
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree13">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree13" aria-expanded="false" aria-controls="collapseThree13">
+              13. ¿Qué métodos de pago aceptan?
+
+
+            </button>
+          </h2>
+          <div id="collapseThree13" class="accordion-collapse collapse" aria-labelledby="headingThree13"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Aceptamos tarjeta de crédito, débito y PayPal. El pago es seguro y el proceso toma solo unos minutos.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree14">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree14" aria-expanded="false" aria-controls="collapseThree14">
+              14. ¿Puedo probarlo antes de pagar?
+
+
+            </button>
+          </h2>
+          <div id="collapseThree14" class="accordion-collapse collapse" aria-labelledby="headingThree14"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              En ocasiones activamos promociones especiales con periodo de prueba. Si ves una promoción activa, te
+              recomendamos aprovecharla.
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree15">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree15" aria-expanded="false" aria-controls="collapseThree15">
+              15. ¿Esto reemplaza a un nutricionista?
+
+
+
+            </button>
+          </h2>
+          <div id="collapseThree15" class="accordion-collapse collapse" aria-labelledby="headingThree15"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No. TECVI es un sistema de apoyo que puede complementar el trabajo de un nutricionista, pero no reemplaza
+              la atención profesional en casos médicos.
+              Fuentes y contenido relacionado
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </div>
-  
+
+    <section class="section footer">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-4">
+            <img src="images/footer_1.png" class="m-auto w-100 mb-4" alt="">
+          </div>
+          <div class="col-lg-8 d-flex flex-column justify-content-center">
+            <div class="text-center">
+              <h2 style="color: #ffffff; font-size: 32px;" class="text-center">Empieza ahora tu transformación</h2>
+              <p style="color: #ffffff; font-size: 14px;" class="text-center px-3">Tu salud no puede esperar más. Haz
+                clic y comienza hoy por WhatsApp.</p>
+                <a href="https://wa.me/51912885968?text=Hola Tecvi, quiero empezar!" target="_blank"
+                class="btn-get-started m-auto gap-2"><i class="bi bi-whatsapp"></i> Quiero
+                empezar por $19.00</a>
+            </div>
+          </div>
+          <div class="col-lg-6 d-xl-none d-block"><img src="images/footer_2.png" class="m-auto w-100 mt-4" alt=""></div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container copyright text-center mt-4 d-flex justify-content-between">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Idakoos LLC</strong> <span>Todos los derechos
+          reservados</span></p>
+      <ul class="d-flex gap-3" style="list-style: none; margin: 0px; padding: 0px;">
+        <li>
+
+          <a href="/terminos-y-condiciones.html" style="color: #212529
+;">Términos y condiciones</a>
+
+        </li>
+        <li>
+
+          <a href="/politicas-de-privacidad.html" style="color: #212529
+;">Políticas de privacidad</a>
+
+        </li>
+
+      </ul>
+    </div>
 
   </main>
 

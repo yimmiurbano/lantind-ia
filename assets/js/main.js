@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -50,7 +50,7 @@
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+    navmenu.addEventListener('click', function (e) {
       e.preventDefault();
       this.parentNode.classList.toggle('active');
       this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
@@ -112,13 +112,13 @@
   /**
    * Init isotope layout and filters
    */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+  document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
     let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function () {
       initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
         itemSelector: '.isotope-item',
         layoutMode: layout,
@@ -127,8 +127,8 @@
       });
     });
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
+      filters.addEventListener('click', function () {
         isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
         this.classList.add('filter-active');
         initIsotope.arrange({
@@ -155,7 +155,7 @@
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+    document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config").innerHTML.trim()
       );
@@ -173,7 +173,7 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  window.addEventListener('load', function (e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -210,4 +210,82 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+
+  /* common fuctions */
+  function el(selector) { return document.querySelector(selector) }
+  function els(selector) { return document.querySelectorAll(selector) }
+  function on(selector, event, action) { els(selector).forEach(e => e.addEventListener(event, action)) }
+  function cookie(name) {
+    let c = document.cookie.split('; ').find(cookie => cookie && cookie.startsWith(name + '='))
+    return c ? c.split('=')[1] : false;
+  }
+
+  /* popup button handler */
+  on('.cookie-popup button', 'click', () => {
+    el('.cookie-popup').classList.add('cookie-popup--accepted');
+    document.cookie = `cookie-accepted=true; path=/; max-age=31536000`;
+    console.log('Cookie aceptada y creada.');
+  });
+
+
+
+  function insertCookiePopup() {
+    if (document.cookie.includes('cookie-accepted=true')) return;
+
+    const popupHTML = `
+ <div class="container-cookie">
+    <div class="cookie-popup cookie-popup--short cookie-popup--dark">
+      <div>
+        Este sitio utiliza cookies para garantizar una mejor experiencia de usuario. Al utilizarlo, aceptas nuestra
+        política de cookies.
+      </div>
+      <div class="cookie-popup-actions">
+        <button>Acepto</button>
+      </div>
+    </div>
+ </div>
+  `;
+
+    document.body.insertAdjacentHTML('beforeend', popupHTML);
+
+    const popup = document.querySelector('.cookie-popup');
+    popup.querySelector('button').addEventListener('click', () => {
+      document.cookie = "cookie-accepted=true; path=/; max-age=" + 60 * 60 * 24 * 365;
+      popup.remove();
+    });
+
+    if (cookie('cookie-accepted') !== "true") {
+      el('.container-cookie').classList.add('cookie-popup--not-accepted');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', insertCookiePopup);
+
+
+  const subscriptionPlans = {
+    mensual: { price: 19.90, duration: "30 días" },
+    trimestral: { price: 59, duration: "90 días" },
+    semestral: { price: 99, duration: "180 días" },
+    anual: { price: 150, duration: "365 días" },
+  };
+
+  const buttons = document.querySelectorAll('.option-btn');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const mode = btn.dataset.mode;
+      const plan = subscriptionPlans[mode];
+
+      if (plan) {
+        document.getElementById('priceDisplay').textContent = `$${plan.price}`;
+        document.getElementById('durationDisplay').textContent = `Por ${plan.duration}`;
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+    });
+  });
+
 })();
+
+
+
