@@ -1879,11 +1879,12 @@ section,
   .content-las-clasicas .card {
     flex: 0 0 calc(33% - 12px);
   }
+
   .cookie-popup {
 
     margin-left: auto;
   }
-  
+
 }
 
 @media (max-width: 767px) {
@@ -1908,6 +1909,10 @@ section,
     font-size: 23px;
   }
 
+  .btn-get-started {
+    width: 92%;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1925,7 +1930,8 @@ section,
 
     padding-right: 0px !important;
 
-}
+  }
+
   .card-title-custom {
     font-size: 12px;
   }
@@ -1946,7 +1952,7 @@ section,
     margin: auto;
   }
 
-  .copyright p{
+  .copyright p {
 
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
